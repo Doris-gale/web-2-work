@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"> 
+	<title>咖啡文化网</title>		
+</head>
+<style>
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    color: #666;
+    font-family:arial;
+    font-size:14px;
+    line-height:1.5; 
+}
+ul,li{
+    list-style-type:none;
+}
+a, a:link, a:visited {
+    color: #000; 
+    text-decoration:none;
+}
+a:hover {
+     color: #CC0000; 
+}
+/* header */
+#header{
+    width: 100%;
+    height: 108px;
+    background:#723e16;
+}
+#header .cont {
+    width:1000px;
+    margin: 0 auto;
+}
+#header .logo {
+    float: left;
+    width: 300px;
+    line-height:108px;
+}
+#header .logo a {
+    font-size:40px;
+    color: #ffffff;
+}
+#header .header_right {
+    float: right;
+    width: 700px;
+}
+.search_box {
+    float: right;
+    margin-top:15px;
+}
+.search_box .text {
+    display:block;
+    height: 20px;
+    width: 150px;
+    color: #fff;
+    font-size: 12px;
+    border: 1px solid #1b0d03;
+    background: #261305;
+    float:left;
+    outline:none;
+}
+.search_box .btn {
+    display:block;
+    float:left;
+    height: 22px;
+    width:50px;
+    cursor: pointer;
+    font-size: 12px;
+    outline: none;
+    color:#885f40;
+    border: 1px solid #1b0d03;
+    background: #261305;
+    margin-left:5px;
+}
+#header .nav{
+    clear: both;
+    float: right;
+    height: 53px;
+    margin-top: 15px;
+}
+#header .nav li {
+    float:left;
+}
+#header .nav li a {
+    float: left;
+    display: block;
+    height: 28px;
+    margin-left: 10px;
+    padding:10px; 
+    padding-top:15px;
+    text-align: center;
+    font-size: 14px;
+    color: #cdaf96; 
+}
+#header .nav a:hover{
+    color: #b78864;
+}
+/* 简介 */
+#jianjie {
+    clear: both;
+    width: 100%;
+    height: 230px;
+    background: #e9dab9;
+}
+#jianjie .cont {
+    width: 1000px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 15px 0; 
+}
+#jianjie .pic {
+    float: left;
+    position: relative;
+    width: 298px;
+    height: 147px;
+    padding: 25px;
+    top: -100px;
+}
+#jianjie .pic  img{
+    width: 298px;
+    height: 270px;
+}
+#jianjie .text {
+    float: right;
+    width: 600px;
+    padding-top: 20px;
+}
+/* 中间内容 */
+#content{
+    width: 100%;
+    background: #e9dab9;
+    padding:30px 0;
+    overflow:hidden;
+}
+#content .cont{
+    width: 1000px;
+    margin: 0 auto;
+    
+}
+#content .cont_left {
+    float: left;
+    width: 600px;
+}
+#content .cont_left h2 {
+    line-height:40px;
+}
+#content .cont_left p {
+    text-indent:28px;
+}
+#content .cont_right {
+    position: relative;
+    float: right;
+    width: 240px;
+    margin: 13px 0;
+    padding: 10px 20px;
+    background:#d8c9a3;
+}
+#content .cont_right img{
+    width:240px;
+    display:block;
+    margin-top:10px;
+}
+                                
+/* footer */
+#footer {
+    width: 100%;
+    text-align:center;
+    padding:20px 0;
+    background:#723e16;
+}
+#footer p {
+    line-height:2;
+    color: #fff;
+}
+/* 轮播 */
+ .wrap{
+     height:200px;
+     width:490px;
+     margin:60px auto;
+     overflow: hidden;
+     position: relative;
+     margin:100px auto;
+}
+ .wrap ul{
+     position:absolute;
+} 
+ .wrap ul li{
+     height:200px;
+ }
+ .wrap ol{
+    position:absolute;
+    right:5px;
+    bottom:10px;
+}
+ .wrap ol li{
+     height:20px; width: 20px;
+     background:#e9dab9;
+     border:solid 1px #666;
+     margin-left:5px;
+     color:#000;
+     float:left;
+     line-height:center;
+     text-align:center;
+     cursor:pointer;
+ }
+ .wrap ol .on{
+     background:#723e16;
+     color:white;
+ }
+#Date{
+    position:absolute;
+    top: 40px;
+    left: 480px;
+    width: 400px;
+    height: 20px;
+    font-size: 15px;
+    color: #b78864;
+}
+</style>
+<body>
+<div id="header">
+    <div class="cont">
+        <div class="logo">
+            <a href="#">咖啡文化网 </a>
+            <p id="Date">点击可以得到时间</p>
+        </div>
+        <div class="header_right">
+            <div class="search_box">
+                <form>
+                <input type="text" class="text"/>
+                <input type="button" value="搜索" class="btn" />
+                </form>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">咖啡发展</a></li>
+                    <li><a href="#">咖啡成分</a></li>
+                    <li><a href="#">咖啡饮用</a></li>
+                    <li><a href="#">咖啡功效</a></li>
+                    <li><a href="#">咖啡利弊</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="jianjie">
+    <div class="cont">
+        <div class="pic"> 
+        	 <div class="wrap" id='wrap'>
+                 <ul id="pic">
+                 <li><img src="images/coffe.jpg" alt=""></li>
+                 <li><img src="images/coffe1.jpg" alt=""></li>
+                 <li><img src="images/coffe2.jpg" alt=""></li>
+                 <li><img src="images/coffe3.jpg" alt=""></li>
+                 <li><img src="images/coffe5.jpg" alt=""></li>
+                 </ul>
+                 <ol id="list">
+                 <li class="on">1</li>
+                 <li>2</li>
+                 <li>3</li>
+                 <li>4</li>
+                 <li>5</li>
+                 </ol>
+             </div>
+        </div>
+        <div class="text">
+            <h1 id="open">咖啡简介</h1>
+            <p>“咖啡”(Coffee)一词源自埃塞俄比亚的一个名叫卡法(kaffa)的小镇，在希腊语中“Kaweh”的意思是“力量与热情”。茶叶与咖啡、可可并称为世界三大饮料。 </p>
+            <p>咖啡树是属茜草科常绿小乔木，原产于埃塞俄比亚。热带、亚热带的常绿小乔木或灌木。叶长卵形，花白色，结深红色浆果。有小果、中果、大果咖啡等。种子炒熟碾成粉可制饮料，有兴奋作用。</p>
+        </div>
+    </div>
+</div>
+<div id="content">
+    <div class="cont">
+        <div class="cont_left">
+            <h2>咖啡起源</h2>
+            <p>世界上第一株咖啡树是在非洲之角发现的。当地土著部落经常把咖啡的果实磨碎，再把它与动物脂肪掺在一起揉捏，做成许多球状的丸子。这些土著部落的人将这些咖啡丸子当成珍贵的食物，专供那些即将出征的战士享用。</p>
+            <p>当时，人们不了解咖啡食用者表现出亢奋是怎么一回事——他们不知道这是由咖啡的刺激性引起的，相反，人们把这当成是咖啡食用者所表现出来的宗教狂热。觉得这种饮料非常神秘，它成了牧师和医生的专用品。对于咖啡的起源有种种不同的传说故事。 最普遍且为大众所乐道的是牧羊人的故事，传说有一位牧羊人，在牧羊的时候，偶然发现他的羊蹦蹦跳跳，仔细一看，原来羊是吃了一种红色的果子才导致举止滑稽怪异。他试着采了一些这种红果子回去熬煮，没想到满室芳香，熬成的汁液喝下以后更是精神振奋，神清气爽，从此，这种果实就被作为一种提神醒脑的饮料，且颇受好评。</p>
+            <p>古时候的阿拉伯人最早把咖啡豆晒干熬煮后，把汁液当作胃药来喝，认为有助于消化。后来发现咖啡还有提神醒脑的作用，同时由于伊斯兰教规严禁教徒饮酒，于是就用咖啡取代酒精饮料，作为提神的饮料而时常饮用。十五世纪以后，到圣地麦加朝圣的穆斯林陆续将咖啡带回居住地，使咖啡渐渐流传到埃及、叙利亚、伊朗和土耳其等国。咖啡进入欧陆当归因于土耳其当时的奥斯曼帝国，由于嗜饮咖啡的鄂图曼大军西征欧陆且在当地驻扎数年之久，在大军最后撤离时，留下了包括咖啡豆在内的大批补给品，维也纳和巴黎的人们得以凭着这些咖啡豆，和从土耳其人那里得到的烹制经验，而发展出欧洲的咖啡文化。战争原是攻占和毁灭，却意外地带来了文化的交和融合，这可是统治者们所始料未及的了</p>
+            <p>西方人都熟知咖啡有三百年的历史，然而在东方，咖啡在更久远前的年代已作为一种饮料在社会各阶层普及。咖啡出现的最早且最确切的时间是公元前8世纪，但是早在荷马的作品（希腊诗人，生卒年有争论，一较权威说法是生于公元前744年---译者注）和许多古老的阿拉伯传奇里，就已记述了一种神奇的，色黑，味苦涩，且具有强烈刺激力量的饮料。公元10世纪前后，阿维森纳（Avicenna, 980-1037，古代伊斯兰世界最杰出的集大成者之一，是哲学家，医生，理论家等---译者注）则用咖啡当作药物治疗疾病。还有一个源自5世纪的奇特故事，传说一个也门牧羊人看见一群山羊从一丛灌木上衔落色泽微红的浆果，很快这些山羊变得焦躁不安，兴奋不已，这个牧羊人把这件事报告给了一位修道士， 这位修道士将一些浆果煮熟，然后提炼出一种味苦，劲足的，能驱赶困倦和睡意的饮料</p>
+        </div>
+        <div class="cont_right">
+            <h2>咖啡展览</h2>
+            <a href="#"><img src="images/a1.jpg"/></a>
+            <a href="#"><img src="images/a2.jpg"/></a>
+            <a href="#"><img src="images/a3.jpg"/></a>
+        </div>
+    </div>
+</div>
+<div id="footer">
+  <p>WriteBy © SunYuNuo </p>
+</div>
+</body>
+<script>
+    //js效果之时钟动态显示
+    var date=document.getElementById("Date");
+    date.onclick=function(){ 
+        setInterval(function(){ 
+            var date=new Date(); 
+            var year=date.getFullYear(); //获取当前年份 
+            var mon=date.getMonth()+1; //获取当前月份 
+            var da=date.getDate(); //获取当前日 
+            var h=date.getHours(); //获取小时 
+            var m=date.getMinutes(); //获取分钟 
+            var s=date.getSeconds(); //获取秒 
+            var d=document.getElementById('Date'); 
+            d.innerHTML='当前时间:'+year+'/'+mon+'/'+da+'/'+h+':'+m+':'+s; },1000) 
+    }
+    //js效果之弹出框并打开新窗口
+    var opencoffe=confirm("如果希望看咖啡的百度简介请按确认！否则请按取消");
+    if(opencoffe==true){
+        window.open("https://baike.baidu.com/item/%E5%92%96%E5%95%A1/29518");
+    }
+    //js效果之轮播图片
+    window.onload=function(){
+    var wrap=document.getElementById('wrap'),
+    pic=document.getElementById('pic').getElementsByTagName("li"),
+    list=document.getElementById('list').getElementsByTagName('li'),
+    index=0,
+    timer=null;
+
+ // 定义并调用自动播放函数
+    timer = setInterval(autoPlay, 2000);
+ 
+ // 鼠标划过整个容器时停止自动播放
+    wrap.onmouseover = function () {
+        clearInterval(timer);
+    }
+ 
+ // 鼠标离开整个容器时继续播放至下一张
+    wrap.onmouseout = function () {
+    timer = setInterval(autoPlay, 2000);
+    }
+ // 遍历所有数字导航实现划过切换至对应的图片
+    for (var i = 0; i < list.length; i++) {
+        list[i].onmouseover = function () {
+        clearInterval(timer);
+        index = this.innerText - 1;
+        changePic(index);
+        };
+    };
+    function autoPlay () {
+        if (++index >= pic.length) index = 0;
+        changePic(index);
+    }
+ 
+ // 定义图片切换函数
+    function changePic (curIndex) {
+        for (var i = 0; i < pic.length; ++i) {
+            pic[i].style.display = "none";
+            list[i].className = "";
+            }
+            pic[curIndex].style.display = "block";
+            list[curIndex].className = "on";
+    }
+ };
+ //js效果之关闭前弹出提示框
+ window.onbeforeunload=function(){
+    return"确定退出该页面吗？";
+ };
+</script>
+</html>
